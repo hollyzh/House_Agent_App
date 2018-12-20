@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import BuyerActions from '../actions/BuyerActions';
 import {browserHistory} from 'react-router';
+import HouseSellIcon from '../images/Sell_Home.png';
 
 export default class HouseSell extends Component{
 
@@ -51,7 +52,7 @@ export default class HouseSell extends Component{
      let {house}= this.state;
     return (
       <div className ="maindiv">
-          <h2 className="text-center">Sell  <img width="60px"  src="http://downloadicons.net/sites/default/files/little-house-icon-90234.png"/></h2>
+          <h2 className="text-center">Your <img width="60px"  src={HouseSellIcon}/></h2>
         <form  className ="formStyle" onSubmit={this.submitHouse}>
           <div className="container form-group ">
             <input type="text" value = {this.state.picture} placeholder="Image URL" className="form-control input-lg input1"
