@@ -92,6 +92,13 @@ const API = {
       .then(res => res.data)
       .then(ServerActions.receiveAdmin)
       .catch(console.error)
+  },
+  register(user) {
+    axios.post('/api/users/register', user)
+      .then(res => {
+        RouteActions.route('/login');
+      })
+      .catch(console.error)
   }
 }
 

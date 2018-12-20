@@ -14,7 +14,7 @@ import HousesPurchase from './components/HousesPurchase';
 import SellPage from  './components/SellPage';
 import LoginForm from './components/LoginForm';
 import ViewPersonForAdmin from './components/ViewPersonForAdmin';
-
+import Register from './components/RegisterForm';
 
 
 render(
@@ -34,6 +34,7 @@ render(
         <Route path='adminperson' component={ViewPersonForAdmin}></Route>
       </Route>
       <Route path='login' component={LoginForm}></Route>
+      <Route path='register' component={Register}></Route>
     </Route>
   </Router>,
   document.getElementById('root')

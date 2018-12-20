@@ -1,6 +1,6 @@
 // CONSTANTS
 const PORT = process.env.PORT || 8000;
-const MONGO_URI = process.env.MONGOLAB_URI || 'mongodb://localhost/person_animaldb';
+const MONGO_URI = process.env.MONGOLAB_URI || 'mongodb://localhost/house_agent_db';
 
 // PACKAGE REQUIRES
 const bodyParser = require('body-parser');

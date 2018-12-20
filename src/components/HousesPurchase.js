@@ -29,7 +29,6 @@ export default class HousesPurchase extends Component{
 
   render(){
    let houses = this.state.houses;
-console.log('houses in here:', houses)
     const soldList  = houses.map( house => {
       return (
         <SoldList key = {house._id} {...house}/>

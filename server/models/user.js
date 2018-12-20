@@ -10,7 +10,10 @@ const userSchema = new mongoose.Schema({
 });
 
 
+
+
 userSchema.statics.register = function(userObj, cb) {
+
   this.findOne({username: userObj.username}, (err, dbUser) => {
     if(err) return cb(err);
     if(dbUser) return cb({error: 'Username already taken.'});
@@ -71,5 +74,6 @@ userSchema.statics.authMiddleware = function(req, res, next) {
 };
 
 const User = mongoose.model('User', userSchema);
+
 
 module.exports = User;
