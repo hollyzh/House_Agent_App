@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import PersonActions from '../actions/PersonActions';
 import { browserHistory } from 'react-router';
+import PersonIcon from '../images/person.png';
 
 
 export default class AddPerson extends Component{
@@ -44,7 +45,7 @@ export default class AddPerson extends Component{
     let {person} = this.state;
     return (
       <div className ="maindiv">
-        <h2 className="text-center"><img width="60px"  src="http://www.2-software.net/site_images/icons/other/register.png"/></h2>
+        <h2 className="text-center"><img width="80px"  src={PersonIcon}/></h2>
         <form className ="formStyle" onSubmit={this.submitPerson}>
           <div className="container form-group ">
             <input type="text" placeholder="Name" value = {this.state.name} className="form-control input-lg input1"

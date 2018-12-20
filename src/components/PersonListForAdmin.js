@@ -1,6 +1,5 @@
 import React , {Component} from 'react';
 import PersonActions from '../actions/PersonActions';
-// import ServerActions from '../actions/ServerActions';
 import { browserHistory } from 'react-router'
 
 export default class PersonListForAdmin extends Component{
